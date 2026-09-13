@@ -13,7 +13,7 @@ function Profile() {
   }
 
   return (
-    <div className="profile-card">
+    <div className="card accent profile-card">
       <h1>👤 Profile Preview</h1>
 
       {data.avatar && (
@@ -21,7 +21,6 @@ function Profile() {
           src={data.avatar}
           alt="Profile"
           width="120"
-          className="profile-avatar"
         />
       )}
 
@@ -32,7 +31,7 @@ function Profile() {
         <p><strong>Email:</strong> {data.email}</p>
 
         {/* Short Bio inside a styled card */}
-        <div className="bio-card">
+        <div className="card accent bio-card">
           <strong>Short Bio:</strong>
           <p>{data.bio}</p>
         </div>
@@ -58,3 +57,4 @@ function Profile() {
 }
 
 export default Profile;
+

@@ -7,13 +7,12 @@ function Feed() {
 
   // Load posts from localStorage on mount
   useEffect(() => {
-  const savedPosts = JSON.parse(localStorage.getItem("posts")) || [];
-  // Sort by newest first
-  const sortedPosts = savedPosts.sort(
-    (a, b) => new Date(b.timestamp) - new Date(a.timestamp)
-  );
-  setPosts(sortedPosts);
-}, []);
+    const savedPosts = JSON.parse(localStorage.getItem("posts")) || [];
+    const sortedPosts = savedPosts.sort(
+      (a, b) => new Date(b.timestamp) - new Date(a.timestamp)
+    );
+    setPosts(sortedPosts);
+  }, []);
 
   // Add new post
   const addPost = (newPost) => {
@@ -62,5 +61,6 @@ function Feed() {
 }
 
 export default Feed;
+
 
 
