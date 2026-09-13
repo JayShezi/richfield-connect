@@ -1,0 +1,279 @@
+/* === Global Theme for Richfield Connect === */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+:root {
+  /* Richfield Brand Colors */
+  --primary: #004aad;      /* Richfield Blue */
+  --primary-dark: #00337a; /* Darker shade for hover */
+  --accent: #dc3545;       /* Richfield Red */
+  --success: #28a745;      /* Green (success actions) */
+  --warning: #ffc107;      /* Yellow (edit actions) */
+  --info: #17a2b8;         /* Teal (like button) */
+  --background: #f9f9f9;   /* Light background */
+  --text: #333333;         /* Dark text */
+  --text-light: #555555;   /* Secondary text */
+  --border: #ddd;          /* Neutral border */
+  --white: #ffffff;        /* Pure white */
+
+  /* Fonts */
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+/* Reset + Global */
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+  color: var(--primary);
+}
+
+/* Buttons */
+button, .feature-btn {
+  font-family: var(--body-font);
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+button:hover, .feature-btn:hover {
+  background: var(--primary-dark);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+/* Register button uses Richfield Red */
+.register-btn {
+  background: var(--accent);
+  color: var(--white);
+}
+.register-btn:hover {
+  background: #c82333;
+}
+
+/* === Reusable Card Base === */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.card.accent {
+  border-top: 4px solid var(--primary);
+}
+
+/* Hero Section */
+.hero-section {
+  background: var(--primary);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.hero-section h1, .hero-section p {
+  color: var(--white);
+}
+
+/* Navbar + Footer */
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 10px;
+  background-color: var(--primary);
+  justify-content: center;
+  margin: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  background-color: var(--background);
+  color: var(--text-light);
+}
+
+/* === About Page Styling === */
+.about {
+  composes: card accent;
+  max-width: 800px;
+}
+.about h1 {
+  font-family: var(--heading-font);
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.about p {
+  font-family: var(--body-font);
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* === Profile Card Styling === */
+.profile-card {
+  composes: card accent;
+  max-width: 600px;
+}
+.profile-card h1 {
+  font-family: var(--heading-font);
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.profile-info p {
+  font-family: var(--body-font);
+  color: var(--text);
+  line-height: 1.6;
+  margin: 10px 0;
+}
+.profile-card img {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+}
+
+/* Interests Styling */
+.profile-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.profile-info ul li {
+  background: var(--primary);
+  color: var(--white);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.profile-info ul li:hover {
+  background: #004080;
+  transform: translateY(-2px);
+}
+
+/* Short Bio Card Styling */
+.bio-card {
+  composes: card accent;
+  padding: 1rem 1.5rem;
+  margin-top: 20px;
+}
+.bio-card strong {
+  display: block;
+  font-family: var(--heading-font);
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.bio-card p {
+  font-family: var(--body-font);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Feed Layout */
+.feed {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* Create Post Form */
+.create-post textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  resize: vertical;
+}
+.create-post button {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.create-post button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Post Buttons */
+.post-card button:first-of-type {
+  background-color: var(--warning);
+  color: var(--text);
+}
+.post-card button:first-of-type:hover {
+  background-color: #e0a800;
+}
+.post-card button:last-of-type {
+  background-color: var(--accent);
+  color: var(--white);
+}
+.post-card button:last-of-type:hover {
+  background-color: #c82333;
+}
+
+/* Comments */
+.comments button {
+  background-color: var(--success);
+  color: var(--white);
+}
+.comments button:hover {
+  background-color: #218838;
+}
+
+/* Like Buttons */
+.post-actions button:first-of-type,
+.likes button {
+  background-color: var(--info);
+  color: var(--white);
+}
+.post-actions button:first-of-type:hover,
+.likes button:hover {
+  background-color: #138496;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .card {
+    padding: 1rem;
+    margin: 20px;
+  }
+  .about h1,
+  .profile-card h1 {
+    font-size: 1.5rem;
+  }
+  .about p,
+  .profile-info p,
+  .bio-card p {
+    font-size: 0.95rem;
+  }
+}
