@@ -1,6 +1,17 @@
 // src/views/Profile.jsx
 import { useLocation, useNavigate } from "react-router-dom";
 
+/*
+  Profile Component:
+  This component displays a detailed preview of a user's profile.
+  It retrieves profile data either from React Router's location state (if passed)
+  or from localStorage as a fallback.
+  If no profile data is found, it prompts users to register first.
+
+  The profile preview includes an optional avatar, full name, student number,
+  campus, email, a short bio presented in a styled card, and interests shown as tags.
+  An "Edit Profile" button allows navigation to the signup/edit page.
+*/
 function Profile() {
   const location = useLocation();
   const navigate = useNavigate();

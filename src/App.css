@@ -1,6 +1,24 @@
-/* === Global Theme for Richfield Connect === */
+/*
+  app.css - Global Stylesheet for Richfield Connect
 
-/* Fonts */
+  This stylesheet sets the global design theme including colors, fonts, and layout
+  principles for the entire Richfield Connect application.
+
+  It defines:
+  - Brand colors as CSS variables for consistent theming.
+  - Base font styles for headings and body text using Google Fonts.
+  - Global reset and default styles for body and headings.
+  - Button styles with color themes and hover animations.
+  - Reusable card components with shadow and border styling.
+  - Specific styles for hero section, navbar, footer, and mobile responsiveness.
+  - Component-specific stylings for pages like About, Profile, Feed, and interactive elements 
+    such as posts, comments, and forms.
+
+  Overall, this file establishes the look and feel of the site and ensures a responsive, 
+  accessible, and visually appealing user interface.
+*/
+
+/* === Fonts Import === */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
 
 :root {

@@ -1,5 +1,19 @@
 import { useState } from "react";
 
+/*
+  Post Component:
+  This component renders an individual post with features including:
+  - Displaying author info, content, timestamp, and avatar.
+  - Managing likes on the post with local state and syncing to localStorage.
+  - Handling comments and replies, including adding, editing, deleting, liking, 
+    and recursive rendering of nested replies.
+  - Supports user interaction for liking posts, comments, and replies.
+  - Uses helper functions to keep comments synced with localStorage.
+  - Contains a nested ReplyBox component to add replies to comments.
+
+  Overall, it provides a full interactive post experience with nested threaded comments,
+  persistent likes and comments, editable content, and deletion options for the author.
+*/
 function Post({ post, onDelete, onEdit }) {
   const [likes, setLikes] = useState(post.likes || []);
   const [comments, setComments] = useState(post.comments || []);

@@ -1,3 +1,16 @@
+/*
+  App Component:
+  This is the root component of the application.
+  It is wrapped in an AppProvider to make global state (posts) available throughout the app.
+  React Router is used to define client-side routing with BrowserRouter.
+
+  The component contains:
+  - A navigation bar with links to key pages: Home, About, Sign Up, Profile, and Feed.
+  - Route definitions that map URL paths to their respective components.
+  - A simple footer displayed on all pages.
+
+  This setup enables seamless navigation and page rendering without full page reloads.
+*/
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./views/Home";
 import About from "./views/About";          // 👈 import About

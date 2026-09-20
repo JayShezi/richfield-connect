@@ -1,3 +1,21 @@
+/*
+  index.css - Base and Global Styles for the Application
+
+  This stylesheet defines CSS custom properties (variables) for colors, fonts, backgrounds,
+  shadows, and other design elements to ensure consistent theming throughout the app.
+
+  It includes:
+  - Color variables that support both light and dark color schemes with
+    corresponding media queries to adapt automatically.
+  - Font settings including font families for sans-serif, headings, and monospace 
+    used for code and counters.
+  - Base styles for body, root container, headings, paragraphs, and inline code blocks.
+  - Responsive font size adjustments for smaller viewports.
+  - Optimizations for font smoothing and rendering for better readability.
+
+  These base styles provide a foundation for consistent and accessible UI appearance.
+*/
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;

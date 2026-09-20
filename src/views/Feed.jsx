@@ -2,6 +2,17 @@ import { useState, useEffect } from "react";
 import CreatePost from "../components/CreatePost";
 import Post from "../components/Post";
 
+/*
+  Feed Component:
+  This component manages and displays the list of posts in a feed.
+  It loads saved posts from localStorage when the component mounts, sorting 
+  them by latest timestamp first.
+  It provides functions to add new posts, delete existing posts, and edit post content.
+  Changes to the post list are synced back to localStorage to persist data.
+  It renders the CreatePost component for adding new posts, and a list of Post components
+  for displaying each post, passing necessary handlers for editing and deleting.
+  If there are no posts, it shows a user-friendly message encouraging the first post.
+*/
 function Feed() {
   const [posts, setPosts] = useState([]);
 

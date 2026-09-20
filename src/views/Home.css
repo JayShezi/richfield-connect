@@ -1,3 +1,19 @@
+/*
+  Home.css - Styles for the Richfield Connect Home Page and Navbar
+
+  This stylesheet controls the layout and appearance of the home page and
+  navigation bar. It sets the main home container with a blue background and 
+  vertical flex layout, styles the hero section with white headings and text, 
+  and designs interactive feature cards with consistent colors.
+
+  The navbar is styled with a red background, white text links, and a responsive
+  layout that aligns the logo on the left and navigation links on the right.
+
+  Buttons and interactive elements have themed colors consistent with Richfield's
+  branding, with smooth hover transitions.
+*/
+
+/* Main home page container */
 .home {
   height: 78vh;               /* full browser height */
   background: #004aad;         /* Richfield blue background */

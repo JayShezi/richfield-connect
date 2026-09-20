@@ -2,6 +2,19 @@ import { Link } from "react-router-dom";
 import ProfilePreview from "../components/ProfilePreview";
 import "./Home.css";
 
+/*
+  Home Component:
+  This component serves as the main landing page for Richfield Connect. 
+  It includes several sections:
+  - The Richfield logo displayed prominently at the top.
+  - A hero section welcoming users and describing the platform's purpose.
+  - A features section with interactive cards highlighting the core functionalities:
+    Connect, Share, Preview Profiles, and Profile Snapshot, each linking to relevant pages.
+  - A mini profile preview that displays a snapshot of the current user's profile.
+  - A call-to-action section prompting users to register if they haven't already.
+  
+  Navigation between pages is handled with React Router's Link components for seamless client-side routing.
+*/
 function Home() {
   return (
     <div className="home">

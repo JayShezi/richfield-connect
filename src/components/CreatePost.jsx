@@ -1,5 +1,14 @@
 import { useState } from "react";
 
+/*
+  CreatePost Component:
+  This component provides a controlled textarea input for users to write new posts.
+  On form submission, it validates the input to ensure it's not empty, retrieves the 
+  current user profile information from localStorage, and constructs a new post object 
+  including author details, timestamp, and empty arrays for likes and comments.
+  The new post is then sent to the parent component via the onAddPost callback prop.
+  Finally, the input field is cleared to allow for new posts.
+*/
 function CreatePost({ onAddPost }) {
   const [content, setContent] = useState("");
 
@@ -13,9 +22,9 @@ function CreatePost({ onAddPost }) {
       author: storedProfile.name || "Anonymous",
       email: storedProfile.email || "",
       content,
-      timestamp: new Date().toLocaleString(), // 👈 adds readable date + time
-      likes: [],       // 👈 start with empty likes array
-      comments: [],    // 👈 start with empty comments array
+      timestamp: new Date().toLocaleString(), // readable date & time
+      likes: [],       // start with no likes
+      comments: [],    // start with no comments
     };
 
     onAddPost(newPost);

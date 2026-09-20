@@ -1,6 +1,17 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+/*
+  SignUpForm Component:
+  This component renders a registration form that allows users to create or edit their profile.
+  It manages state for all profile fields: name, student number, campus, email, password, interests,
+  bio, profile picture (avatar), and agreement to terms.
+  The form pre-fills fields from localStorage if profile data exists, enabling editing.
+  Various validations are performed on submit, such as required fields, email format, password match,
+  minimum lengths, and terms acceptance.
+  Upon successful validation, profile data is saved to localStorage, and the user is redirected to the profile page.
+  It also supports previewing an uploaded profile picture and selecting multiple interests via checkboxes.
+*/
 function SignUpForm() {
   const navigate = useNavigate();
   const savedData = JSON.parse(localStorage.getItem("profileData")) || {};
