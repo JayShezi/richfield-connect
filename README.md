@@ -55,7 +55,7 @@ npm install
 
 3. Run the development server
 npm run dev
-Open http://localhost:5177/ in your browser.
+Open the URL displayed in the terminal. Vite usually runs on http://localhost:5173.
 
 ---
 
