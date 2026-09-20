@@ -5,6 +5,8 @@ import "./Home.css";
 function Home() {
   return (
     <div className="home">
+      <img src="/richfield-logo.png" alt="Richfield Logo" className="richfield-logo" />
+
       {/* Hero Section */}
       <section className="hero-section">
         <h1>Welcome to Richfield Connect</h1>

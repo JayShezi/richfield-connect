@@ -64,3 +64,72 @@
   background: #00337a;         /* darker blue button background */
   color: #fff;                 /* white text on hover */
 }
+
+.richfield-logo {
+width: 190px;
+height: auto;
+display: block;
+margin: 0 auto 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #ad0000;  /* match your red */
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto; /* pushes links to the right */
+  padding: 0;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+.navbar-logo {
+  width: 170px; /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #ad0000;
+  height: 60px; /* enough height for logo */
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto; /* push the menu to the right */
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  color: white;            /* make link text white */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  background: #00337a;         /* darker blue button background */
+}
+

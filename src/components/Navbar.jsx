@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav>
+      <Link to="/">
+        <img src="/richfield-logo.png" alt="Richfield Logo" className="navbar-logo" />
+      </Link>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
