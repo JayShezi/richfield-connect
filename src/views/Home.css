@@ -1,18 +1,18 @@
 .home {
-  height: 75vh;               /* full browser height */
+  height: 78vh;               /* full browser height */
   background: #004aad;         /* Richfield blue background */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 1.0rem;
   color: #fff;                 /* default text white */
   overflow: hidden;            /* remove vertical scrollbar */
 }
 
 .hero-section h1 {
   color: #fff;                 /* force heading to white */
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
@@ -26,7 +26,7 @@
   background: #004aad;
   color: #fff;
   border-radius: 8px;
-  padding: 0.3rem;
+  padding: 0.1rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
@@ -41,17 +41,17 @@
 }
 
 /* Headings inside these cards */
-.feature-card.connect h2,
-.feature-card.share h2,
-.feature-card.preview h2,
-.feature-card.snapshot h2 {
+.feature-card.connect h3,
+.feature-card.share h3,
+.feature-card.preview h3,
+.feature-card.snapshot h3 {
   color: #fff;                 /* headings white */
 }
 
 .feature-btn {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  margin-top: 0.7rem;
+  padding: 0.1rem 0.3rem;
   background: #eb0523;         /* Richfield red button */
   color: #fff;                 /* white text */
   border-radius: 4px;
