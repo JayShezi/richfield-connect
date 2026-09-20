@@ -295,7 +295,6 @@ function ReplyBox({ onReply }) {
   );
 }
 
-// 👇 make sure this is the last line in Post.jsx
 export default Post;
 
 
